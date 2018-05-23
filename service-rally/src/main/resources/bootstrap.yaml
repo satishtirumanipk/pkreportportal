@@ -1,0 +1,14 @@
+info:
+  build:
+    name: Rally Service
+    description: ReportPortal Rally Integration
+    version: '@version@'
+    branch: '@branch@'
+    repo: '@repo@'
+
+spring:
+  profiles:
+    ## Default one is still Eureka
+    active: ${rp.profiles:default}
+  application:
+    name: rally

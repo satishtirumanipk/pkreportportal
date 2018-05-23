@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    ## Default one is still Eureka
+    active: ${rp.profiles:default}
+  application:
+    name: gateway
+
+  mvc:
+    favicon:
+      enabled: false
+info:
+  build:
+    name: Gateway Service
+    description: ReportPortal Gateway Service
+    version: '@version@'
+    branch: '@branch@'
+    repo: '@repo@'

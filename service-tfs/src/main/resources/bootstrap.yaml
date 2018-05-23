@@ -1,0 +1,21 @@
+info:
+  build:
+    name: TFS Service
+    description: ReportPortal TFS Integration
+    version: '@version@'
+    branch: '@branch@'
+    repo: '@repo@'
+
+spring:
+  application:
+    name: tfs
+  profiles:
+    active: ${rp.profiles:default}
+security:
+  sessions: stateless
+  basic:
+    enabled: false
+
+rp:
+   tfs:
+     native: tfs/native
